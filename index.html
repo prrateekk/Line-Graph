@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #6b6b47;
+  stroke-width:2px;
+  shape-rendering: crispEdges;
+}
+
+svg{
+	display:block;
+	margin:auto;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke:#993333;
+  stroke-width: 1.5px;
+}
+
+.tick text{
+   font-size: 12px;
+}
+
+.tick line{
+   opacity: 0.2;
+}
+
+.name
+
+</style>
+
+<body>
+<div id='vname'></div>
+
+<script src="d3.js"></script>
+<script src="script.js"></script>
+
+
+<script>
+
+
+</script>
+<center>
+
+<br>
+Date:
+<input type = 'text' id='stdate' value='1-Jan-10'> - 
+<input type = 'text' id='endate' value='30-Dec-10'>
+<input type = 'text' id='vil' value='V1'>
+<button type = 'button' onclick='update()'>update</button>
+<br><br>
+<p>
+Move the cursor over the graph to see the tooltip. Change the fields(in correct format) and click update to see transition.<br><br>
+
+Date format - dd-(month first 3 letters)-yy<br><br>
+The data.json file currently stores data for 19 Villages named - V1,V2....V19 for Dates - 1-jan-10 to 30-dec-10.
+<br><br>
+</p>
+</center>
+
+</body>
+
